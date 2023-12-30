@@ -7,6 +7,7 @@ const BudgetCard = ({
   max,
   gray,
   openAddExpenseModal,
+  onViewExpensesClick,
   hideButtons,
 }) => {
   const classNames = [];
@@ -48,7 +49,9 @@ const BudgetCard = ({
             >
               Add Expense
             </Button>
-            <Button variant="outline-secondary">View Expenses</Button>
+            <Button onClick={onViewExpensesClick} variant="outline-secondary">
+              View Expenses
+            </Button>
           </Stack>
         )}
       </Card.Body>
